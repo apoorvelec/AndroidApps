@@ -15,6 +15,14 @@ public class MainActivity extends ActionBarActivity {
 
 	String msg = "Android : ";
 	TextView CalcOutput;
+	String Number1="";
+	String Number2="";
+	String OutputNumber;
+	boolean MathematicalOperatorButtonClicked=false;
+	boolean ResultOperatorButtonClicked=false;
+	boolean AddOperator = false;
+	boolean MinusOperator = false;
+	boolean DivideOperator = false;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,39 +89,137 @@ public class MainActivity extends ActionBarActivity {
     	if(v.getId() == R.id.button1){
             //handle the click here
     		CalcOutput = (TextView) findViewById(R.id.text);
-    		CalcOutput.setText("1");
+    		CalcOutput.append("1");
+    		if(this.MathematicalOperatorButtonClicked){
+    			this.Number2 = this.Number2+"1";
+    		}else{
+    			this.Number1 = this.Number1+"1";
+    		}
+    		System.out.println("1");
     	}else if(v.getId() == R.id.button2){
             //handle the click here
     		CalcOutput = (TextView) findViewById(R.id.text);
-    		CalcOutput.setText("2");
+    		CalcOutput.append("2");
+    		if(this.MathematicalOperatorButtonClicked){
+    			this.Number2 = this.Number2+"2";
+    		}else{
+    			this.Number1 = this.Number1+"2";
+    		}
     	}else if(v.getId() == R.id.button3){
             //handle the click here
     		CalcOutput = (TextView) findViewById(R.id.text);
-    		CalcOutput.setText("3");
+    		CalcOutput.append("3");
+    		if(this.MathematicalOperatorButtonClicked){
+    			this.Number2 = this.Number2+"3";
+    		}else{
+    			this.Number1 = this.Number1+"3";
+    		}
     	}else if(v.getId() == R.id.button4){
             //handle the click here
     		CalcOutput = (TextView) findViewById(R.id.text);
-    		CalcOutput.setText("4");
+    		CalcOutput.append("4");
+    		if(this.MathematicalOperatorButtonClicked){
+    			this.Number2 = this.Number2+"4";
+    		}else{
+    			this.Number1 = this.Number1+"4";
+    		}
     	}else if(v.getId() == R.id.button5){
             //handle the click here
     		CalcOutput = (TextView) findViewById(R.id.text);
-    		CalcOutput.setText("5");
+    		CalcOutput.append("5");
+    		if(this.MathematicalOperatorButtonClicked){
+    			this.Number2 = this.Number2+"5";
+    		}else{
+    			this.Number1 = this.Number1+"5";
+    		}
     	}else if(v.getId() == R.id.button6){
             //handle the click here
     		CalcOutput = (TextView) findViewById(R.id.text);
-    		CalcOutput.setText("6");
+    		CalcOutput.append("6");
+    		if(this.MathematicalOperatorButtonClicked){
+    			this.Number2 = this.Number2+"6";
+    		}else{
+    			this.Number1 = this.Number1+"6";
+    		}
     	}else if(v.getId() == R.id.button7){
             //handle the click here
     		CalcOutput = (TextView) findViewById(R.id.text);
-    		CalcOutput.setText("7");
+    		CalcOutput.append("7");
+    		if(this.MathematicalOperatorButtonClicked){
+    			this.Number2 = this.Number2+"7";
+    		}else{
+    			this.Number1 = this.Number1+"7";
+    		}
     	}else if(v.getId() == R.id.button8){
             //handle the click here
     		CalcOutput = (TextView) findViewById(R.id.text);
-    		CalcOutput.setText("8");
+    		CalcOutput.append("8");
+    		if(this.MathematicalOperatorButtonClicked){
+    			this.Number2 = this.Number2+"8";
+    		}else{
+    			this.Number1 = this.Number1+"8";
+    		}
     	}else if(v.getId() == R.id.button9){
             //handle the click here
     		CalcOutput = (TextView) findViewById(R.id.text);
-    		CalcOutput.setText("9");
+    		CalcOutput.append("9");
+    		if(this.MathematicalOperatorButtonClicked){
+    			this.Number2 = this.Number2+"9";
+    		}else{
+    			this.Number1 = this.Number1+"9";
+    		}
+    	}else if(v.getId() == R.id.button10){
+            //handle the click here
+    		CalcOutput = (TextView) findViewById(R.id.text);
+    		CalcOutput.append("+");
+    		this.MathematicalOperatorButtonClicked = true;
+    		this.AddOperator = true;
+    	}else if(v.getId() == R.id.button11){
+            //handle the click here
+    		CalcOutput = (TextView) findViewById(R.id.text);
+    		CalcOutput.append("-");
+    		this.MathematicalOperatorButtonClicked = true;
+    		this.MinusOperator = true;
+    	}else if(v.getId() == R.id.button12){
+            //handle the click here
+    		CalcOutput = (TextView) findViewById(R.id.text);
+    		CalcOutput.append("/");
+    		this.MathematicalOperatorButtonClicked = true;
+    		this.DivideOperator = true;
+    	}
+    }
+    
+    public void outputResult(View v){
+    	if(v.getId() == R.id.button13){
+    		CalcOutput = (TextView) findViewById(R.id.text);
+        	int num1 = Integer.parseInt(Number1);
+        	int num2 = Integer.parseInt(Number2);
+        	System.out.println(num1+" "+num2);
+        	if(this.AddOperator){
+        		// add logic
+        		this.OutputNumber=Integer.toString(num1+num2);
+        		CalcOutput.setText(OutputNumber);
+        		this.AddOperator=false;
+        		this.MathematicalOperatorButtonClicked=false;
+        		this.Number1="";
+        		this.Number2="";
+        	}else if(this.MinusOperator){
+        		//add logic
+        		this.OutputNumber=Integer.toString(num1-num2);
+        		CalcOutput.setText(OutputNumber);
+        		this.MinusOperator=false;
+        		this.MathematicalOperatorButtonClicked=false;
+        		this.Number1="";
+        		this.Number2="";
+        	}else if(this.DivideOperator){
+        		//add logic
+        		this.OutputNumber=Integer.toString(num1/num2);
+        		CalcOutput.setText(OutputNumber);
+        		this.DivideOperator=false;
+        		this.MathematicalOperatorButtonClicked=false;
+        		this.Number1="";
+        		this.Number2="";
+        	}
     	}
     }
 }
