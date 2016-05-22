@@ -23,7 +23,6 @@ public class MainActivity extends ActionBarActivity {
 	boolean AddOperator = false;
 	boolean MinusOperator = false;
 	boolean DivideOperator = false;
-    boolean MultiplyOperator = false;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -187,21 +186,6 @@ public class MainActivity extends ActionBarActivity {
     		CalcOutput.append("/");
     		this.MathematicalOperatorButtonClicked = true;
     		this.DivideOperator = true;
-    	}else if(v.getId() == R.id.button14){
-            //handle the click here
-    		CalcOutput = (TextView) findViewById(R.id.text);
-    		CalcOutput.append("*");
-    		this.MathematicalOperatorButtonClicked = true;
-    		this.MultiplyOperator = true;
-    	}else if(v.getId() == R.id.button15){
-            //handle the click here
-    		CalcOutput = (TextView) findViewById(R.id.text);
-    		CalcOutput.append("0");
-    		if(this.MathematicalOperatorButtonClicked){
-    			this.Number2 = this.Number2+"0";
-    		}else{
-    			this.Number1 = this.Number1+"0";
-    		}
     	}
     }
     
@@ -232,14 +216,6 @@ public class MainActivity extends ActionBarActivity {
         		this.OutputNumber=Integer.toString(num1/num2);
         		CalcOutput.setText(OutputNumber);
         		this.DivideOperator=false;
-        		this.MathematicalOperatorButtonClicked=false;
-        		this.Number1="";
-        		this.Number2="";
-        	}else if(this.MultiplyOperator){
-        		//add logic
-        		this.OutputNumber=Integer.toString(num1*num2);
-        		CalcOutput.setText(OutputNumber);
-        		this.MultiplyOperator=false;
         		this.MathematicalOperatorButtonClicked=false;
         		this.Number1="";
         		this.Number2="";

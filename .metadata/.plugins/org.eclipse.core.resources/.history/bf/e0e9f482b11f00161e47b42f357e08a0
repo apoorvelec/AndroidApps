@@ -235,14 +235,6 @@ public class MainActivity extends ActionBarActivity {
         		this.MathematicalOperatorButtonClicked=false;
         		this.Number1="";
         		this.Number2="";
-        	}else if(this.MultiplyOperator){
-        		//add logic
-        		this.OutputNumber=Integer.toString(num1*num2);
-        		CalcOutput.setText(OutputNumber);
-        		this.MultiplyOperator=false;
-        		this.MathematicalOperatorButtonClicked=false;
-        		this.Number1="";
-        		this.Number2="";
         	}
     	}
     }

@@ -97,17 +97,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="="
-      android:onClick="outputResult" />
-   	<Button android:id="@+id/button14"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="*"
-      android:onClick="buttonClick" />
-   	<Button android:id="@+id/button15"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="0"
-      android:onClick="buttonClick" />	    
+      android:onClick="outputResult" />	    
    </LinearLayout>
    
 </LinearLayout>
