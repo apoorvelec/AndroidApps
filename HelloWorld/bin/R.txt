@@ -246,7 +246,7 @@ int id action_context_bar 0x7f05001d
 int id action_menu_divider 0x7f050016
 int id action_menu_presenter 0x7f050017
 int id action_mode_close_button 0x7f050024
-int id action_settings 0x7f05004c
+int id action_settings 0x7f05004d
 int id activity_chooser_view_content 0x7f050025
 int id always 0x7f05000b
 int id beginning 0x7f050011
@@ -257,6 +257,7 @@ int id button12 0x7f050048
 int id button13 0x7f050049
 int id button14 0x7f05004a
 int id button15 0x7f05004b
+int id button16 0x7f05004c
 int id button2 0x7f05003e
 int id button3 0x7f05003f
 int id button4 0x7f050040
