@@ -8,7 +8,7 @@
    <TextView android:id="@+id/text"
       android:layout_width="wrap_content"
       android:layout_height="100dp"
-      android:hint="See your calculations here.\n Scroll down if necessary"
+      android:text="Enter Something"
       android:scrollbars="vertical" />
       
    <!-- More GUI components go here  -->

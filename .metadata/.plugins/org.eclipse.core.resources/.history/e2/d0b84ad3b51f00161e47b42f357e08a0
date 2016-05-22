@@ -216,7 +216,7 @@ public class MainActivity extends ActionBarActivity {
         	if(this.AddOperator){
         		// add logic
         		this.OutputNumber=Integer.toString(num1+num2);
-        		CalcOutput.append("\n"+"="+OutputNumber+"\n");
+        		CalcOutput.append("\n"+OutputNumber);
         		this.AddOperator=false;
         		this.MathematicalOperatorButtonClicked=false;
         		this.Number1="";
@@ -224,7 +224,7 @@ public class MainActivity extends ActionBarActivity {
         	}else if(this.MinusOperator){
         		//add logic
         		this.OutputNumber=Integer.toString(num1-num2);
-        		CalcOutput.append("\n"+"="+OutputNumber+"\n");
+        		CalcOutput.append("\n"+OutputNumber);
         		this.MinusOperator=false;
         		this.MathematicalOperatorButtonClicked=false;
         		this.Number1="";
@@ -232,7 +232,7 @@ public class MainActivity extends ActionBarActivity {
         	}else if(this.DivideOperator){
         		//add logic
         		this.OutputNumber=Integer.toString(num1/num2);
-        		CalcOutput.append("\n"+"="+OutputNumber+"\n");
+        		CalcOutput.append("\n"+OutputNumber);
         		this.DivideOperator=false;
         		this.MathematicalOperatorButtonClicked=false;
         		this.Number1="";
@@ -240,7 +240,7 @@ public class MainActivity extends ActionBarActivity {
         	}else if(this.MultiplyOperator){
         		//add logic
         		this.OutputNumber=Integer.toString(num1*num2);
-        		CalcOutput.append("\n"+"="+OutputNumber+"\n");
+        		CalcOutput.append("\n"+OutputNumber);
         		this.MultiplyOperator=false;
         		this.MathematicalOperatorButtonClicked=false;
         		this.Number1="";
