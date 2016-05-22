@@ -1461,3 +1461,54 @@ Java Model Exception: Java Model Status [Unknown javadoc format for Integer {key
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
 !SUBENTRY 1 org.eclipse.jdt.core 4 1009 2016-05-21 20:28:53.024
 !MESSAGE Unknown javadoc format for Integer {key=Ljava/lang/Integer;} [in Integer.class [in java.lang [in G:\Eclipse for Android\adt-bundle-windows-x86_64-20140702\sdk\platforms\android-20\android.jar]]]
+
+!ENTRY org.eclipse.ui 2 2 2016-05-21 20:45:06.117
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-05-21 20:45:35.273
+!MESSAGE NewXmlFile wizard: no data for target Android 4.4W, project HelloWorld
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-05-21 20:45:35.274
+!MESSAGE NewXmlFile wizard: no data for target Android 4.4W, project HelloWorld
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-05-21 20:45:35.275
+!MESSAGE NewXmlFile wizard: no data for target Android 4.4W, project HelloWorld
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-05-21 20:45:35.276
+!MESSAGE NewXmlFile wizard: no data for target Android 4.4W, project HelloWorld
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-05-21 20:45:35.276
+!MESSAGE NewXmlFile wizard: no data for target Android 4.4W, project HelloWorld
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-05-21 20:45:35.277
+!MESSAGE NewXmlFile wizard: no data for target Android 4.4W, project HelloWorld
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-05-21 20:45:35.278
+!MESSAGE NewXmlFile wizard: no data for target Android 4.4W, project HelloWorld
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-05-21 20:45:35.279
+!MESSAGE NewXmlFile wizard: no data for target Android 4.4W, project HelloWorld
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-05-21 20:46:43.554
+!MESSAGE NewXmlFile wizard: no data for target Android 4.4W, project HelloWorld
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-05-21 20:46:43.554
+!MESSAGE NewXmlFile wizard: no data for target Android 4.4W, project HelloWorld
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-05-21 20:46:43.555
+!MESSAGE NewXmlFile wizard: no data for target Android 4.4W, project HelloWorld
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-05-21 20:46:43.556
+!MESSAGE NewXmlFile wizard: no data for target Android 4.4W, project HelloWorld
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-05-21 20:46:43.557
+!MESSAGE NewXmlFile wizard: no data for target Android 4.4W, project HelloWorld
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-05-21 20:46:43.558
+!MESSAGE NewXmlFile wizard: no data for target Android 4.4W, project HelloWorld
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-05-21 20:46:43.559
+!MESSAGE NewXmlFile wizard: no data for target Android 4.4W, project HelloWorld
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-05-21 20:46:43.560
+!MESSAGE NewXmlFile wizard: no data for target Android 4.4W, project HelloWorld

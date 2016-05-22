@@ -2,7 +2,6 @@ package com.example.helloworld;
 
 import android.support.v7.app.ActionBarActivity;
 import android.text.method.ScrollingMovementMethod;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -241,7 +240,6 @@ public class MainActivity extends ActionBarActivity {
         	}else if(this.MultiplyOperator){
         		//add logic
         		this.OutputNumber=Integer.toString(num1*num2);
-        		CalcOutput.setTextColor(Color.parseColor("#FF0000"));
         		CalcOutput.append("\n"+"="+OutputNumber+"\n");
         		this.MultiplyOperator=false;
         		this.MathematicalOperatorButtonClicked=false;
