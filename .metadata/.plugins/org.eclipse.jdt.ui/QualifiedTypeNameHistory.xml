@@ -7,4 +7,6 @@
 <fullyQualifiedTypeName name="android.view.View"/>
 <fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="com.example.helloworld.R.id"/>
+<fullyQualifiedTypeName name="android.text.method.ScrollingMovementMethod"/>
+<fullyQualifiedTypeName name="android.graphics.Color"/>
 </qualifiedTypeNameHistroy>
