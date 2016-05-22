@@ -6,10 +6,9 @@
    
    <!--This is the Calculator's topmost output screen  -->
    <TextView android:id="@+id/text"
-      android:layout_weight="1" 
-      android:layout_width="fill_parent"
+      android:layout_width="wrap_content"
       android:layout_height="100dp"
-      android:hint="See your calculations here. Scroll down if necessary"
+      android:hint="See your calculations here.\n Scroll down if necessary"
       android:scrollbars="vertical" />
       
    <!-- More GUI components go here  -->
