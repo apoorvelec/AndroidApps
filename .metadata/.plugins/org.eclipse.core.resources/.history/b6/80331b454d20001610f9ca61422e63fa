@@ -283,11 +283,4 @@ public class MainActivity extends ActionBarActivity {
         	}
     	}
     }
-    
-    public void whyFunctionOutput(View v){
-    	if(v.getId() == R.id.button18){
-    		CalcOutput = (TextView) findViewById(R.id.text);
-    		CalcOutput.append("Because the hare ran into the forest\n");
-    	}
-    }
 }

@@ -153,6 +153,6 @@
            android:layout_height="wrap_content"
            android:text="WHY?"
            android:layout_weight="1"
-           android:onClick="whyFunctionOutput"/>
+           android:onClick="buttonClick"/>
    </LinearLayout>
 </LinearLayout>
