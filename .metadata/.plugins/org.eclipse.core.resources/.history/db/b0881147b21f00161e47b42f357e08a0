@@ -1,7 +1,6 @@
 package com.example.helloworld;
 
 import android.support.v7.app.ActionBarActivity;
-import android.text.method.ScrollingMovementMethod;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -209,14 +208,13 @@ public class MainActivity extends ActionBarActivity {
     public void outputResult(View v){
     	if(v.getId() == R.id.button13){
     		CalcOutput = (TextView) findViewById(R.id.text);
-    		CalcOutput.setMovementMethod(new ScrollingMovementMethod());
         	int num1 = Integer.parseInt(Number1);
         	int num2 = Integer.parseInt(Number2);
-        	//System.out.println(num1+" "+num2);
+        	System.out.println(num1+" "+num2);
         	if(this.AddOperator){
         		// add logic
         		this.OutputNumber=Integer.toString(num1+num2);
-        		CalcOutput.append("\n"+OutputNumber);
+        		CalcOutput.setText(OutputNumber);
         		this.AddOperator=false;
         		this.MathematicalOperatorButtonClicked=false;
         		this.Number1="";
@@ -224,7 +222,7 @@ public class MainActivity extends ActionBarActivity {
         	}else if(this.MinusOperator){
         		//add logic
         		this.OutputNumber=Integer.toString(num1-num2);
-        		CalcOutput.append("\n"+OutputNumber);
+        		CalcOutput.setText(OutputNumber);
         		this.MinusOperator=false;
         		this.MathematicalOperatorButtonClicked=false;
         		this.Number1="";
@@ -232,7 +230,7 @@ public class MainActivity extends ActionBarActivity {
         	}else if(this.DivideOperator){
         		//add logic
         		this.OutputNumber=Integer.toString(num1/num2);
-        		CalcOutput.append("\n"+OutputNumber);
+        		CalcOutput.setText(OutputNumber);
         		this.DivideOperator=false;
         		this.MathematicalOperatorButtonClicked=false;
         		this.Number1="";
@@ -240,7 +238,7 @@ public class MainActivity extends ActionBarActivity {
         	}else if(this.MultiplyOperator){
         		//add logic
         		this.OutputNumber=Integer.toString(num1*num2);
-        		CalcOutput.append("\n"+OutputNumber);
+        		CalcOutput.setText(OutputNumber);
         		this.MultiplyOperator=false;
         		this.MathematicalOperatorButtonClicked=false;
         		this.Number1="";

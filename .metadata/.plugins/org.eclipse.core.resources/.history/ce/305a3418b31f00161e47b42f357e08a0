@@ -8,8 +8,7 @@
    <TextView android:id="@+id/text"
       android:layout_width="wrap_content"
       android:layout_height="100dp"
-      android:text="Enter Something"
-      android:scrollbars="vertical" />
+      android:text="Enter Something" />
       
    <!-- More GUI components go here  -->
    <LinearLayout android:layout_width="fill_parent"

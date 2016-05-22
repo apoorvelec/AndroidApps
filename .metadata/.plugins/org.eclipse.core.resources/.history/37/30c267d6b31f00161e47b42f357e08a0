@@ -1,7 +1,6 @@
 package com.example.helloworld;
 
 import android.support.v7.app.ActionBarActivity;
-import android.text.method.ScrollingMovementMethod;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -209,7 +208,6 @@ public class MainActivity extends ActionBarActivity {
     public void outputResult(View v){
     	if(v.getId() == R.id.button13){
     		CalcOutput = (TextView) findViewById(R.id.text);
-    		CalcOutput.setMovementMethod(new ScrollingMovementMethod());
         	int num1 = Integer.parseInt(Number1);
         	int num2 = Integer.parseInt(Number2);
         	//System.out.println(num1+" "+num2);

@@ -5,11 +5,10 @@
    android:orientation="vertical" >
    
    <!--This is the Calculator's topmost output screen  -->
-   <TextView android:id="@+id/text"
+   <ScrollView android:id="@+id/text"
       android:layout_width="wrap_content"
       android:layout_height="100dp"
-      android:text="Enter Something"
-      android:scrollbars="vertical" />
+      android:text="Enter Something" />
       
    <!-- More GUI components go here  -->
    <LinearLayout android:layout_width="fill_parent"
