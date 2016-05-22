@@ -7,6 +7,6 @@ Calculator: This is a simple Android app which is a simple calculator.
 
 Calculator1pt1: This is an advanced version of the Calculator app. This is intended to support the following functionality,
 	(i) Trigonometric functions
-	(ii) Fill screen size
+	(ii) Fill screen size (Done)
 	(iii) An enjoyable UI
 	(iv) sqrt function. In general, computing the (n^th) root
