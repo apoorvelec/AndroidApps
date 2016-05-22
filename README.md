@@ -10,4 +10,4 @@ Calculator1pt1: This is an advanced version of the Calculator app. This is inten
 	(ii) Fill screen size (Done)
 	(iii) An enjoyable UI
 	(iv) sqrt function (Done). In general, computing the (n^th) root
-	(v) The WHY? button (this button gives a full range of random answers every time someone clicks it. Can be handy if you run out of answers in some situation :)). Inspired by MATLAB why command.
+	(v) The WHY? button (this button gives a full range of random answers every time someone clicks it. Can be handy if you run out of answers in some situation :)). Inspired by MATLAB why command. (Done)
