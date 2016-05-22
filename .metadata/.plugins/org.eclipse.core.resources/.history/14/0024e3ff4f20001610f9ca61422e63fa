@@ -2,8 +2,6 @@ package com.example.calculator1pt1;
 
 import android.support.v7.app.ActionBarActivity;
 import android.text.method.ScrollingMovementMethod;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,7 +15,6 @@ import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 
-	SQLiteDatabase WHYDB;
 	String msg = "Android : ";
 	TextView CalcOutput;
 	String Number1="";
@@ -35,13 +32,6 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
-        // Set up a database to support answers to WHY? button
-        this.WHYDB = openOrCreateDatabase("WhyAns", MODE_PRIVATE, null);
-        this.WHYDB.execSQL("DROP TABLE IF EXISTS ANSWERS;");
-        this.WHYDB.execSQL("CREATE TABLE IF NOT EXISTS ANSWERS(id text, ans text);");
-        this.WHYDB.execSQL("INSERT INTO ANSWERS VALUES (\"0\",\"Because the hare ran into forest\");");
-        this.WHYDB.execSQL("INSERT INTO ANSWERS VALUES (\"1\",\"Because today the class was cancelled\");");
     }
 
 
@@ -297,12 +287,7 @@ public class MainActivity extends ActionBarActivity {
     public void whyFunctionOutput(View v){
     	if(v.getId() == R.id.button18){
     		CalcOutput = (TextView) findViewById(R.id.text);
-    		Log.d(msg, "Fine");
-    		Cursor result = this.WHYDB.rawQuery("Select * from ANSWERS;", null);
-    		result.moveToFirst();
-    		result.moveToNext();
-    		Log.d(msg, result.getColumnName(0));
-    		CalcOutput.append(result.getString(0)+"\n");
+    		CalcOutput.append("Because the hare ran into the forest\n");
     	}
     }
 }

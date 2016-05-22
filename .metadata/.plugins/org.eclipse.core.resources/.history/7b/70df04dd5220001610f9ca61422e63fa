@@ -38,10 +38,8 @@ public class MainActivity extends ActionBarActivity {
         
         // Set up a database to support answers to WHY? button
         this.WHYDB = openOrCreateDatabase("WhyAns", MODE_PRIVATE, null);
-        this.WHYDB.execSQL("DROP TABLE IF EXISTS ANSWERS;");
-        this.WHYDB.execSQL("CREATE TABLE IF NOT EXISTS ANSWERS(id text, ans text);");
-        this.WHYDB.execSQL("INSERT INTO ANSWERS VALUES (\"0\",\"Because the hare ran into forest\");");
-        this.WHYDB.execSQL("INSERT INTO ANSWERS VALUES (\"1\",\"Because today the class was cancelled\");");
+        this.WHYDB.execSQL("CREATE TABLE IF NOT EXISTS ANSWERS(id int, ans text);");
+        this.WHYDB.execSQL("INSERT INTO ANSWERS VALUES (0,\"Because the hare ran into forest\");");
     }
 
 
@@ -297,11 +295,7 @@ public class MainActivity extends ActionBarActivity {
     public void whyFunctionOutput(View v){
     	if(v.getId() == R.id.button18){
     		CalcOutput = (TextView) findViewById(R.id.text);
-    		Log.d(msg, "Fine");
-    		Cursor result = this.WHYDB.rawQuery("Select * from ANSWERS;", null);
-    		result.moveToFirst();
-    		result.moveToNext();
-    		Log.d(msg, result.getColumnName(0));
+    		Cursor result = this.WHYDB.rawQuery("Select ans from ANSWERS LIMIT 1", null);
     		CalcOutput.append(result.getString(0)+"\n");
     	}
     }

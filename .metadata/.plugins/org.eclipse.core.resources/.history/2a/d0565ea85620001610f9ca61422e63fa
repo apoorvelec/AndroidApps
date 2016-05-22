@@ -300,7 +300,6 @@ public class MainActivity extends ActionBarActivity {
     		Log.d(msg, "Fine");
     		Cursor result = this.WHYDB.rawQuery("Select * from ANSWERS;", null);
     		result.moveToFirst();
-    		result.moveToNext();
     		Log.d(msg, result.getColumnName(0));
     		CalcOutput.append(result.getString(0)+"\n");
     	}
