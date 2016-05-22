@@ -9,4 +9,4 @@ Calculator1pt1: This is an advanced version of the Calculator app. This is inten
 	(i) Trigonometric functions
 	(ii) Fill screen size (Done)
 	(iii) An enjoyable UI
-	(iv) sqrt function. In general, computing the (n^th) root
+	(iv) sqrt function (Done). In general, computing the (n^th) root
