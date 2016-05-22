@@ -9,4 +9,7 @@
 <fullyQualifiedTypeName name="com.example.helloworld.R.id"/>
 <fullyQualifiedTypeName name="android.text.method.ScrollingMovementMethod"/>
 <fullyQualifiedTypeName name="android.graphics.Color"/>
+<fullyQualifiedTypeName name="com.example.calculator1pt1.R.id"/>
+<fullyQualifiedTypeName name="android.database.sqlite.SQLiteDatabase"/>
+<fullyQualifiedTypeName name="android.database.Cursor"/>
 </qualifiedTypeNameHistroy>

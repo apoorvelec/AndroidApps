@@ -1,13 +1,7 @@
 package com.example.calculator1pt1;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-
 import android.support.v7.app.ActionBarActivity;
 import android.text.method.ScrollingMovementMethod;
-import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
@@ -45,25 +39,13 @@ public class MainActivity extends ActionBarActivity {
         // Set up a database to support answers to WHY? button
         this.WHYDB = openOrCreateDatabase("WhyAns", MODE_PRIVATE, null);
         this.WHYDB.execSQL("DROP TABLE IF EXISTS ANSWERS;");
-        this.WHYDB.execSQL("CREATE TABLE ANSWERS(ans text);");
-        Resources resources = getResources();
-    	InputStream IS;
-		try {
-			IS = resources.getAssets().open("AnsToWhy.txt");
-			InputStreamReader ISReader = new InputStreamReader(IS);
-	    	BufferedReader bf = new BufferedReader(ISReader);
-	    	String Line = bf.readLine();
-	    	while(Line!=null){
-	    		this.WHYDB.execSQL("INSERT INTO ANSWERS VALUES(\""+Line+"\");");
-	    		Line = bf.readLine();
-	    	}
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+        this.WHYDB.execSQL("CREATE TABLE IF NOT EXISTS ANSWERS(id text, ans text);");
+        this.WHYDB.execSQL("INSERT INTO ANSWERS VALUES (\"0\",\"Because the hare ran into forest\");");
+        this.WHYDB.execSQL("INSERT INTO ANSWERS VALUES (\"1\",\"Because today the class was cancelled\");");
     }
 
-	/** Called when the activity is about to become visible. */
+
+    /** Called when the activity is about to become visible. */
     @Override
     protected void onStart() {
        super.onStart();
@@ -316,11 +298,9 @@ public class MainActivity extends ActionBarActivity {
     	if(v.getId() == R.id.button18){
     		CalcOutput = (TextView) findViewById(R.id.text);
     		Log.d(msg, "Fine");
-    		// Find a random answer
-    		String SQLQuery = "SELECT * FROM ANSWERS ORDER BY RANDOM() LIMIT 1;";
-    		Cursor result = this.WHYDB.rawQuery(SQLQuery, null);
+    		Cursor result = this.WHYDB.rawQuery("Select * from ANSWERS;", null);
     		result.moveToFirst();
-    		//result.moveToNext();
+    		result.moveToNext();
     		Log.d(msg, result.getColumnName(0));
     		CalcOutput.append(result.getString(0)+"\n");
     	}
