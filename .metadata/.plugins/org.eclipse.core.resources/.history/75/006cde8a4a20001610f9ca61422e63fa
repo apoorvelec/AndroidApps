@@ -230,15 +230,8 @@ public class MainActivity extends ActionBarActivity {
     	if(v.getId() == R.id.button13){
     		CalcOutput = (TextView) findViewById(R.id.text);
     		CalcOutput.setMovementMethod(new ScrollingMovementMethod());
-    		int num1 = 0; //default
-    		int num2 = 0; //default
-    		if(!this.Number1.equals("")){
-    			num1 = Integer.parseInt(Number1);
-    		}
-    		if(!this.Number2.equals("")){
-    			num2 = Integer.parseInt(Number2);
-    		}
-        	
+        	int num1 = Integer.parseInt(Number1);
+        	int num2 = Integer.parseInt(Number2);
         	//System.out.println(num1+" "+num2);
         	if(this.AddOperator){
         		// add logic

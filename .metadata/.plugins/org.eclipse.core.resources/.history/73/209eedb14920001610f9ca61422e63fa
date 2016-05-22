@@ -26,7 +26,6 @@ public class MainActivity extends ActionBarActivity {
 	boolean MinusOperator = false;
 	boolean DivideOperator = false;
     boolean MultiplyOperator = false;
-    boolean SQRTOperator = false;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -220,9 +219,15 @@ public class MainActivity extends ActionBarActivity {
     	}else if(v.getId() == R.id.button17){
             //handle the click here
     		CalcOutput = (TextView) findViewById(R.id.text);
-    		CalcOutput.append("SquareRoot of "); // Clear screen
-    		this.MathematicalOperatorButtonClicked = true;
-    		this.SQRTOperator = true;
+    		CalcOutput.setText("SquareRoot of "); // Clear screen
+    		// Set all states to default initial
+    		this.MathematicalOperatorButtonClicked = false;
+    		this.MultiplyOperator = false;
+    		this.AddOperator=false;
+    		this.MinusOperator=false;
+    		this.ResultOperatorButtonClicked = false;
+    		this.Number1="";
+    		this.Number2="";
     	}
     }
     
@@ -230,15 +235,8 @@ public class MainActivity extends ActionBarActivity {
     	if(v.getId() == R.id.button13){
     		CalcOutput = (TextView) findViewById(R.id.text);
     		CalcOutput.setMovementMethod(new ScrollingMovementMethod());
-    		int num1 = 0; //default
-    		int num2 = 0; //default
-    		if(!this.Number1.equals("")){
-    			num1 = Integer.parseInt(Number1);
-    		}
-    		if(!this.Number2.equals("")){
-    			num2 = Integer.parseInt(Number2);
-    		}
-        	
+        	int num1 = Integer.parseInt(Number1);
+        	int num2 = Integer.parseInt(Number2);
         	//System.out.println(num1+" "+num2);
         	if(this.AddOperator){
         		// add logic
@@ -269,14 +267,6 @@ public class MainActivity extends ActionBarActivity {
         		this.OutputNumber=Integer.toString(num1*num2);
         		CalcOutput.append("\n"+"="+OutputNumber+"\n");
         		this.MultiplyOperator=false;
-        		this.MathematicalOperatorButtonClicked=false;
-        		this.Number1="";
-        		this.Number2="";
-        	}else if(this.SQRTOperator){
-        		//add logic
-        		this.OutputNumber=Double.toString(Math.sqrt(num2));
-        		CalcOutput.append("\n"+"="+OutputNumber+"\n");
-        		this.SQRTOperator=false;
         		this.MathematicalOperatorButtonClicked=false;
         		this.Number1="";
         		this.Number2="";

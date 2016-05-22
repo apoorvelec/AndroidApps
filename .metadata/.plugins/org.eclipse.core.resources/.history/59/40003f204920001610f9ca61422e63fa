@@ -142,11 +142,5 @@
            android:text="CLR"
            android:layout_weight="1"
            android:onClick="buttonClick"/>
-       <Button android:id="@+id/button17"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="SQRT"
-           android:layout_weight="1"
-           android:onClick="buttonClick"/>
    </LinearLayout>
 </LinearLayout>
