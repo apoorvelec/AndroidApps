@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 
 import android.support.v7.app.ActionBarActivity;
 import android.text.method.ScrollingMovementMethod;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -17,6 +18,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -321,8 +323,18 @@ public class MainActivity extends ActionBarActivity {
     		Cursor result = this.WHYDB.rawQuery(SQLQuery, null);
     		result.moveToFirst();
     		//result.moveToNext();
-    		Log.d(msg, result.getColumnName(0));
+    		//Log.d(msg, result.getColumnName(0));
     		CalcOutput.append(result.getString(0)+"\n");
+    	}
+    }
+    
+    public void openNewActivity(View v){
+    	if(v.getId() == R.id.button19){
+    		Intent intent = new Intent(this, SomeActivity.class);
+    		EditText textView = (EditText) findViewById(R.id.some_activity_text);
+    	    //String message = textView.getText().toString();
+    	    //intent.putExtra("MESSAGE", message);
+    	    startActivity(intent);
     	}
     }
 }

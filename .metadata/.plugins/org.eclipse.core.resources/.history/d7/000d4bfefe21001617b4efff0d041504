@@ -1,0 +1,7 @@
+package com.example.calculator1pt1;
+
+import ActionBarActivity;
+
+public class SomeActivity extends ActionBarActivity {
+
+}

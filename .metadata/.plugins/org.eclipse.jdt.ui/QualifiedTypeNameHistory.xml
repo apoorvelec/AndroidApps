@@ -12,4 +12,8 @@
 <fullyQualifiedTypeName name="com.example.calculator1pt1.R.id"/>
 <fullyQualifiedTypeName name="android.database.sqlite.SQLiteDatabase"/>
 <fullyQualifiedTypeName name="android.database.Cursor"/>
+<fullyQualifiedTypeName name="android.content.res.Resources"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
 </qualifiedTypeNameHistroy>
