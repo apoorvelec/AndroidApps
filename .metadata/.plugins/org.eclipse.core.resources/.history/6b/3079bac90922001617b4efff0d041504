@@ -329,7 +329,7 @@ public class MainActivity extends ActionBarActivity {
     }
     
     public void openInfoActivity(View v){
-    	if(v.getId() == R.id.button19){
+    	if(v.getId() == R.id.calc_info){
     		Intent intent = new Intent(this,CalculatorInfo.class);
     		startActivity(intent);
     	}

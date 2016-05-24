@@ -328,11 +328,13 @@ public class MainActivity extends ActionBarActivity {
     	}
     }
     
-    public void openInfoActivity(View v){
+    public void openNewActivity(View v){
     	if(v.getId() == R.id.button19){
-    		Intent intent = new Intent(this,CalculatorInfo.class);
-    		startActivity(intent);
+    		Intent intent = new Intent(this, SomeActivity.class);
+    		EditText textView = (EditText) findViewById(R.id.some_activity_text);
+    	    //String message = textView.getText().toString();
+    	    //intent.putExtra("MESSAGE", message);
+    	    startActivity(intent);
     	}
     }
-    
 }
