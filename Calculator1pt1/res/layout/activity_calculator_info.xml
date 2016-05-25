@@ -6,7 +6,15 @@
     <TextView android:id="@+id/calc_info"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="This is the calculator's information\n
-        Developer: Apoorv Patwardhan" />
+        android:text="Welcome to Calculator1pt1\n
+Developer: Apoorv Patwardhan\n Please find the information below:\n
+\n This calculator is designed for simple calculations. There are 4 mathematical
+ operators included - +,-,/,* which can be used between any two numbers.\n
+ Additionally, you can use the CLR button to clear the screen and reset the calculator.
+ \n The SQRT function calculates the square root of a number. In this case, just press\n
+ SQRT button and then press the number. The = button is used to find the result\n
+  of any calculation.\n
+  The WHY? button is perhaps the most interesting one. It will give you different \n
+  outputs everytime you press it. Check it out in leisure!" />
 
 </LinearLayout>
