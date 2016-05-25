@@ -332,8 +332,7 @@ public class MainActivity extends ActionBarActivity {
     	if(v.getId() == R.id.button19){
     		Intent intent = new Intent(this,CalculatorInfo.class);
     		TextView calculatorconsole = (TextView) findViewById(R.id.text);
-    		Log.d("debug", "dones");
-    		String message = calculatorconsole.getText().toString();
+    		String message = (String) calculatorconsole.getText();
     		intent.putExtra("MESSAGE", message);
     		startActivity(intent);
     	}
