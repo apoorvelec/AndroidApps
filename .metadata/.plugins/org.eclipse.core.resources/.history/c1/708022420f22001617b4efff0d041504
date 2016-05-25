@@ -333,10 +333,8 @@ public class MainActivity extends ActionBarActivity {
     		Intent intent = new Intent(this,CalculatorInfo.class);
     		TextView calculatorconsole = (TextView) findViewById(R.id.text);
     		Log.d("debug", "dones");
-    		// added to make use sometime later
     		String message = calculatorconsole.getText().toString();
     		intent.putExtra("MESSAGE", message);
-    		// -------
     		startActivity(intent);
     	}
     }
