@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gymdroid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="monday_button">Monday</string>
+    <string name="tuesday_button">Tuesday</string>
+    <string name="wednesday_button">Wednesday</string>
+    <string name="thursday_button">Thursday</string>
+    <string name="friday_button">Friday</string>
+    
+    <string name="monday_workout">Monday Workout Schedule</string>
+    <string name="tuesday_workout">Tuesday Workout Schedule</string>
+    <string name="wednesday_workout">Wednesday Workout Schedule</string>
+    <string name="thursday_workout">Thursday Workout Schedule</string>
+    <string name="friday_workout">Friday Workout Schedule</string>
+    
+    <string name="workout_suggestion_hint">Which workout are you planning?</string>
+</resources>

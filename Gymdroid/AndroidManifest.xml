@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gymdroid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MondayActivity"
+            android:label="@string/monday_workout" >
+            <intent-filter>
+                <action android:name="com.example.gymdroid.MondayActivity" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TuesdayActivity"
+            android:label="@string/tuesday_workout" >
+            <intent-filter>
+                <action android:name="com.example.gymdroid.TuesdayActivity" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WednesdayActivity"
+            android:label="@string/wednesday_workout" >
+            <intent-filter>
+                <action android:name="com.example.gymdroid.WednesdayActivity" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ThursdayActivity"
+            android:label="@string/thursday_workout" >
+            <intent-filter>
+                <action android:name="com.example.gymdroid.ThursdayActivity" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FridayActivity"
+            android:label="@string/friday_workout" >
+            <intent-filter>
+                <action android:name="com.example.gymdroid.FridayActivity" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
