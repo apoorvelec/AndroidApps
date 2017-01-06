@@ -1,0 +1,19 @@
+package com.columbia.investofolio;
+
+import com.columbia.investofolio.database.InvestofolioDBHelper;
+
+import android.app.Activity;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+
+public class MyInvestmentsActivity extends Activity{
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_my_investments);
+		
+	}
+	
+	
+}

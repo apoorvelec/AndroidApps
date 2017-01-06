@@ -14,7 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="My Investments"
-        android:textColor="@color/button_font_color" />
+        android:textColor="@color/button_font_color"
+        android:onClick="startMyInvestmentsActivity" />
 
     <Button
         android:layout_width="match_parent"

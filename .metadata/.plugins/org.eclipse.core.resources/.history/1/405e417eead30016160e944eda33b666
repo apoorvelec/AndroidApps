@@ -1,0 +1,28 @@
+package com.columbia.investofolio;
+
+import com.columbia.investofolio.database.InvestofolioDBHelper;
+import com.columbia.investofolio.database.InvestofolioDataContract.InvestmentTable;
+
+import android.app.Activity;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.view.View;
+
+public class MyInvestmentsActivity extends Activity{
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_my_investments);
+	}
+	
+	public void showDatabaseRecords(View v){
+		InvestofolioDBHelper DbHelper = new InvestofolioDBHelper(v.getContext());
+		SQLiteDatabase db = DbHelper.getReadableDatabase();
+		
+		String sql = "SELECT * FROM "+InvestmentTable.TABLE_NAME;
+		Cursor cursor = db.rawQuery(sql , null);
+	}
+	
+}

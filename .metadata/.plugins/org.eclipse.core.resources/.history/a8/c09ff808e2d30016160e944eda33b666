@@ -1,0 +1,39 @@
+package com.columbia.investofolio.database;
+
+import android.provider.BaseColumns;
+
+public final class InvestofolioDataContract {
+
+	private InvestofolioDataContract() {}
+	
+	private static final String SQL_CREATE_ENTRIES =
+		    "CREATE TABLE " + InvestmentTable.TABLE_NAME + " (" +
+		    		InvestmentTable._ID + " INTEGER PRIMARY KEY," +
+		    		InvestmentTable.COLUMN_NAME_POLICY_HOLDER_NAME + " TEXT," +
+		    		InvestmentTable.COLUMN_NAME_INVESTMENT_NAME + " TEXT," +
+		    		InvestmentTable.COLUMN_NAME_FD_NO + " TEXT," +
+		    		InvestmentTable.COLUMN_NAME_MATURITY_DATE + " TEXT," +
+		    		InvestmentTable.COLUMN_NAME_PRINCIPAL_AMOUNT + " TEXT," +
+		    		InvestmentTable.COLUMN_NAME_PRINCIPAL_AMOUNT_SOURCE + " TEXT," +
+		    		InvestmentTable.COLUMN_NAME_RATE_OF_INTEREST + " TEXT," +
+		    		InvestmentTable.COLUMN_NAME_MATURITY_PROCEEDS + " TEXT," +
+		    		InvestmentTable.COLUMN_NAME_SPECIAL_REMARK + " TEXT)";
+
+		private static final String SQL_DELETE_ENTRIES =
+		    "DROP TABLE IF EXISTS " + InvestmentTable.TABLE_NAME;
+	
+	/* Inner class that defines the table contents */
+    public static class InvestmentTable implements BaseColumns {
+        public static final String TABLE_NAME = "InvestmentTable";
+        public static final String COLUMN_NAME_POLICY_HOLDER_NAME = "PolicyHolderName";
+        public static final String COLUMN_NAME_INVESTMENT_NAME = "InvestmentName";
+        public static final String COLUMN_NAME_FD_NO = "FDNo";
+        public static final String COLUMN_NAME_INCEPTION_DATE = "InceptionDate";
+        public static final String COLUMN_NAME_MATURITY_DATE = "MaturityDate";
+        public static final String COLUMN_NAME_PRINCIPAL_AMOUNT = "PrincipalAmount";
+        public static final String COLUMN_NAME_PRINCIPAL_AMOUNT_SOURCE = "PrincipalAmountSource";
+        public static final String COLUMN_NAME_RATE_OF_INTEREST = "RateOfInterest";
+        public static final String COLUMN_NAME_MATURITY_PROCEEDS = "MaturityProceeds";
+        public static final String COLUMN_NAME_SPECIAL_REMARK = "SpecialRemark";
+    }
+}

@@ -9,6 +9,7 @@ import android.view.View;
 
 public class MainActivity extends Activity {
 
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -18,6 +19,11 @@ public class MainActivity extends Activity {
 	public void startAddInvestmentActivity(View v){
 		System.out.println(v.getId());
 		Intent intent = new Intent(this, AddInvestmentActivity.class);
+		startActivity(intent);
+	}
+	
+	public void startMyInvestmentsActivity(View v){
+		Intent intent = new Intent(this, MyInvestmentsActivity.class);
 		startActivity(intent);
 	}
 }

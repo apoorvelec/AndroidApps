@@ -1,0 +1,5 @@
+package com.columbia.investofolio.database;
+
+public class InvestofolioDataContract {
+
+}
