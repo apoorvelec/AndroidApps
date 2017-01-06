@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Investofolio</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="welcome_message">Welcome to the Investofolio app!</string>
+
+</resources>
